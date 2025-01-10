@@ -119,5 +119,6 @@
   "bugs": {
     "url": "https://github.com/Spark2009/server/issues"
   },
-  "homepage": "https://github.com/Spark2009/server"
+  "homepage": "https://github.com/Spark2009/server",
+  "keywords": []
 }
