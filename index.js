@@ -1,4 +1,5 @@
 let express =require('express');
+const serverless = require("serverless-http");
 let app = express();
 let path=require('path')
 app.use(express.json());
@@ -10,7 +11,8 @@ app.get ('/:id',(req, res)=>{
 });
 
 
-
+app.use("/.netlify/functions/app", app);
+module.exports.handler = serverless(app);
 
 app.listen(3000,(err)=>{
     console.log(err);
