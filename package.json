@@ -110,6 +110,7 @@
     "vary": "^1.1.2"
   },
   "scripts": {
+    "test":"test"
   },
   "author": "",
   "license": "ISC",

@@ -26,7 +26,7 @@
   
         "src": "/(.*)", 
   
-        "dest": "server.js" 
+        "dest": "index.js" 
   
       }
   
