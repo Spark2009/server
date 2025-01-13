@@ -6,7 +6,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.static(path.join(__dirname,"public")));
 app.set('view engine',"ejs")
 app.get ('/:id',(req, res)=>{
-    res.render('index');
+    res.render('index',{id:req.params.id});
 });
 
 
