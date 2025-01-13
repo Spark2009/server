@@ -12,9 +12,9 @@ app.get('/',(req,res)=>{
 })
 
 app.post('/create',(req, res)=>{
-    const name = req.body.name;
-    console.log('Name submitted:', name);
-    res.render('create', { name: name });
+    const { name, email, age } = req.body;
+    console.log('Form submitted:', { name, email, age });
+    res.render('create', { name, email, age });
 });
 
 
